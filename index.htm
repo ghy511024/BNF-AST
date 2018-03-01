@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>自定义 BNF 编译解析</title>
+</head>
+<body>
+<script type="text/javascript" src="bnfparser.js"></script>
+<script type="text/javascript" src="interpreter_ch.js"></script>
+<link rel="stylesheet" href="demo.css">
+<textarea id="str" placeholder="String to Parse Here" cols="120" rows="15">
+let B,Y;
+B 等于 "SDFSDF";
+输入 Y;
+循环 ( Y > 0 ) {
+   输出 Y ;
+   Y等于Y减1;
+};
+输出 B;
+</textarea>
+<textarea id="bnf" placeholder="BNF Here" >
+<程序>     ::= <定义 块> <语句 块>
+
+<定义 块>  ::= <定义> | <定义> <定义 块>
+<定义>     ::= let  <变量 组> ;
+<变量 组>  ::= <变量> , <变量 组> | <变量>
+
+<语句 块>  ::= <语句> <语句 块> | <语句>
+<语句>     ::= <赋值>|<判断>|<循环>|<输出>|<输入>
+
+<赋值>     ::= <变量> 等于 <表达式> ;
+<输入>     ::= 输入 <变量 组> ;
+<输出>     ::= 输出 <变量 组> ;
+
+<判断>     ::= 如果 <条件> { <语句 块> } ;
+<循环>     ::= 循环 <条件> { <语句 块> } ;
+<条件>	   ::= <比较> | ! <条件> | [ <条件> && <条件> ] | [ <条件> or <条件> ]
+
+<比较>     ::= ( <值> <比较 符> <值> )
+<比较 符>  ::= != | == | < | > | <= | >=
+<表达式>   ::= <计算> | <计算> 加 <表达式> | <计算> 减 <表达式>
+<计算>     ::= <值> | <值> 乘 <计算> | <值> 除 <计算>
+
+<值>       ::= <整形> | <变量> | ( <表达式> )|<字符串>
+<变量>     ::= <字符><变量> | <字符><整形> | <字符>
+<字符>     ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z
+<整形>     ::= <数字><整形> | <数字>
+<数字>     ::= 0|1|2|3|4|5|6|7|8|9
+<字符串>   ::= "<变量 组>" |  '<变量 组>'
+
+</textarea>
+<textarea id="conout"></textarea>
+<br/>
+<button type="button" onclick="bnf_go()">BNF 转换为 AST</button>
+<button type="button" onclick="interpreter_go()">解释执行 AST</button>
+<div id="out" class="displaydiv"><i>抽象语法树</i></div>
+<textarea  readonly id="pprint" style="display: none"></textarea>
+<textarea  readonly id="bulkin" style="display: none"></textarea>
+<script type="text/javascript">
+    function output_a(a) {
+        if (a == undefined)
+            return "???";
+        if (a.type != "rule")
+            return '<span class="tokenspan">' + a.name + '</span>';
+        var res = '<span class="rulespan">' + bnf.nencode(a.name) + "<br/>";
+        for (var i = 0; i < a.ast.length; ++i)
+            res += output_a(a.ast[i]);
+        return res + '</span>';
+    }
+    var ast;
+    function bnf_go() {
+        x = document.getElementById("bnf");
+        y = document.getElementById("str");
+        z = document.getElementById("out");
+        p = document.getElementById("pprint");
+        q = document.getElementById("conout");
+        r = document.getElementById("bulkin");
+        var rules = bnf.parse_rules(x.value);
+        console.log(rules);
+        ast = bnf.parse_string(y.value.trim(), rules);
+        q.value = "";
+        p.value = "";
+        console.log(ast);
+        if (ast && ast.type != "error") {
+            z.innerHTML = output_a(ast);
+        }
+        else if (ast)
+            z.innerHTML = "ERROR: Line " + ast.line + ", position " + ast.position + ": " + bnf.nencode(ast.error);
+        else
+            z.innerHTML = "A parsing error has occurred. No additional information is available.";
+    }
+    function interpreter_go() {
+        p = document.getElementById("pprint");
+        q = document.getElementById("conout");
+        if (ast) {
+            try {
+                p.value = bnf.operate(ast, CORE.printer);
+            } catch (e) {
+                p.value = "An unexpected error occurred during pretty-printing.";
+            }
+            try {
+                q.value = "";
+                CORE.interpreter.input = r.value;
+                var res = "\nProgram returned " + bnf.operate(ast, CORE.interpreter);
+//                q.value += res;
+            } catch (e) {
+                q.value = "An error occurred while running your code.\n\n" + e + "\n\nStack trace (if supported):\n" + e.stack;
+            }
+            //}
+        }
+        else q.value = "Please enter valid code in the above box and press 'Parse BNF' before running.";
+    }
+</script>
+</body>
+</html>
