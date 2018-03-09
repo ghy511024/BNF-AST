@@ -8,7 +8,7 @@
 <script type="text/javascript" src="interpreter_ch.js"></script>
 <link rel="stylesheet" href="demo.css">
 <textarea id="str" placeholder="String to Parse Here" cols="120" rows="15">
-let B,Y;
+定义 B,Y;
 B 等于 "SDFSDF";
 输入 Y;
 循环 ( Y > 0 ) {
@@ -21,7 +21,7 @@ B 等于 "SDFSDF";
 <程序>     ::= <定义 块> <语句 块>
 
 <定义 块>  ::= <定义> | <定义> <定义 块>
-<定义>     ::= let  <变量 组> ;
+<定义>     ::= 定义  <变量 组> ;
 <变量 组>  ::= <变量> , <变量 组> | <变量>
 
 <语句 块>  ::= <语句> <语句 块> | <语句>
@@ -75,18 +75,18 @@ B 等于 "SDFSDF";
         q = document.getElementById("conout");
         r = document.getElementById("bulkin");
         var rules = bnf.parse_rules(x.value);
-        console.log(rules);
+        console.log(JSON.stringify(rules));
         ast = bnf.parse_string(y.value.trim(), rules);
         q.value = "";
         p.value = "";
-        console.log(ast);
+        console.log(JSON.stringify(ast),"...");
         if (ast && ast.type != "error") {
             z.innerHTML = output_a(ast);
         }
         else if (ast)
             z.innerHTML = "ERROR: Line " + ast.line + ", position " + ast.position + ": " + bnf.nencode(ast.error);
         else
-            z.innerHTML = "A parsing error has occurred. No additional information is available.";
+            z.innerHTML = "转换异常，请检查语法";
     }
     function interpreter_go() {
         p = document.getElementById("pprint");
