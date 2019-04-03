@@ -75,7 +75,7 @@ B 等于 "SDFSDF";
         q = document.getElementById("conout");
         r = document.getElementById("bulkin");
         var rules = bnf.parse_rules(x.value);
-        console.log(JSON.stringify(rules));
+//        console.log(JSON.stringify(rules));
         ast = bnf.parse_string(y.value.trim(), rules);
         q.value = "";
         p.value = "";

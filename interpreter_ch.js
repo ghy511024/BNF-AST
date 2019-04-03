@@ -33,21 +33,13 @@ CORE = (function () {
         return res;
     }
 
-    /**
-     * This is the default print function. It handles all aspects of pretty-printing a rule.
-     * @param ast    The AST to be printed.
-     * @param ops    The printer operations; these are passed from function to function by the BNF backend.
-     * @param spaces An array of strings to use in place of whitespace tokens from the AST.
-     * @param inds   An array of indentation levels to apply to each rule in the given AST.
-     * @param rinds  An array of booleans denoting whether to respect the current indentation level.
-     */
     function defprint(ast, ops, spaces, inds, rinds) {
         var res = "", spc = 0, indc = 0, rindc = 0, rind;
         spaces = (spaces && spaces.length) ? spaces : (console.log("ERROR: " + spaces), [' ']);
         inds = inds || [];
         rinds = rinds || [];
-        if (ast.type == "rule")
-            for (var i = 0; i < ast.ast.length; ++i)
+        if (ast.type == "rule") {
+            for (var i = 0; i < ast.ast.length; ++i) {
                 if (ast.ast[i].type == "rule") {
                     var indo = ind;
                     if (indc < inds.length)
@@ -63,8 +55,13 @@ CORE = (function () {
                     res += ast.ast[i].name;
                 }
                 else res += spc < spaces.length ? spaces[spc++] : spaces[spaces.length - 1];
+            }
+        }
+
+
         return res;
     }
+
     printer = {
         indents: ind = 0, ///< This is the amount of indentation used in recurring levels of the pretty-printer; it must be a member of ops so it can be passed through bnf.operate().
         operate: operate = bnf.operate,
@@ -302,7 +299,7 @@ CORE = (function () {
             for (var i = 0; i < vars.length; ++i)
                 maxlen = Math.max(maxlen, vars[i].length);
             for (var i = 0; i < vars.length; ++i)
-                msg += strrep(" ", maxlen - vars[i].length)  + symbolTable[vars[i]] + "\n";
+                msg += strrep(" ", maxlen - vars[i].length) + symbolTable[vars[i]] + "\n";
             log(msg);
             return 0;
         },

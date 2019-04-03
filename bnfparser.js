@@ -13,9 +13,10 @@ var bnf = (function () {
     function nencode(x) {
         return x.replace(/&/g, "&amp;").replace(/\|/g, "&#124;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
     }
-/**
- * 解析bnf
- * */
+
+    /**
+     * 解析bnf
+     * */
     function parse_rule(rule) {
         var res = [], resraw = rule.split(/\s*\|\s*/);
         for (var i = 0; i < resraw.length; ++i) {
@@ -42,11 +43,10 @@ var bnf = (function () {
 
     function parse_rules(bnf) {
         rules_raw = bnf.split(/(<.*?>)\s*::=\s*(.*)\s*/);
-
         rules = {};
-        for (var i = 0; i + 2 < rules_raw.length; i += 3)
+        for (var i = 0; i + 2 < rules_raw.length; i += 3) {
             rules[rules_raw[i + 1]] = parse_rule(rules_raw[i + 2]);
-
+        }
         return rules;
     }
 
@@ -61,8 +61,7 @@ var bnf = (function () {
         function visit_rule_opt(rule, reject_ast, attempt) {
             var ast = reject_ast;
 
-            function backtrack(errtxt, heuristic)
-            {
+            function backtrack(errtxt, heuristic) {
                 if (pos >= max_streak && errtxt != undefined && errtxt) {
                     if (pos > max_streak)
                         most_likely_error = {};
@@ -242,8 +241,10 @@ var bnf = (function () {
     }
 
     function operate(ast, ops) {
-        if (ast.type == "rule" && ops[ast.name] != undefined)
+        if (ast.type == "rule" && ops[ast.name] != undefined){
             return (ops[ast.name])(ast, ops);
+        }
+
         return (ops['generic'])(ast, ops);
     }
 
