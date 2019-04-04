@@ -4,14 +4,13 @@
 const RuleParser = require('../lib/RuleParser');
 const ASTParse = require('../lib/ASTParse');
 const bnf = `
+<数字>     ::= 0|1|2|3|4|5|6|7|8|9
 <整形>     ::= <数字><整形> | <数字>
-<数字>     ::= 零|一|二|三|四|五|六|七|八|九
-<单引号>   ::= '
-<双引号>   ::= "
-<字符串>   ::= <单引号><整形><单引号>|<双引号><整形><双引号>
-<字符>     ::= A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z
+<值>       ::= <整形> | ( <表达式> )
+<计算>     ::= <值> | <值> 乘 <计算> | <值> 除 <计算>
+<表达式>   ::= <计算> | <计算> 加 <表达式> | <计算> 减 <表达式>
 `
-const pro = `一一`
+const pro = `123加(1加1)`
 var rulsMap = RuleParser.parse(bnf)
 
 let ast = ASTParse(pro, rulsMap);
