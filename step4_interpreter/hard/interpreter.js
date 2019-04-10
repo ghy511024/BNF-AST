@@ -5,7 +5,7 @@ CORE = (function () {
     function log(message) {
         if (!logwin) logwin = document.getElementById("conout");
         if (logwin) logwin.value += message;
-        else alert("Couldn't find log window");
+        else alert("输出文本不存在，id 为 conout 的文本框");
     }
 
     function getStringIn(input, msg) {
@@ -20,8 +20,10 @@ CORE = (function () {
 
     function getInput(input, msg) {
         var res = getStringIn(input, msg);
-        if (!res.car.match(/[0-9]+/))
-            throw("Input error: Please input only integers. In an input file, they must be separated by whitespace.");
+        if (!res.car.match(/[0-9]+/)) {
+            alert("少年，只能输入数字")
+            return '';
+        }
         res.car = parseInt(res.car);
         return res;
     }
@@ -35,7 +37,7 @@ CORE = (function () {
 
     function defprint(ast, ops, spaces, inds, rinds) {
         var res = "", spc = 0, indc = 0, rindc = 0, rind;
-        spaces = (spaces && spaces.length) ? spaces : (console.log("ERROR: " + spaces), [' ']);
+        // spaces = (spaces && spaces.length) ? spaces : (console.log("ERROR: " + spaces), [' ']);
         inds = inds || [];
         rinds = rinds || [];
         if (ast.type == "rule") {
@@ -63,7 +65,7 @@ CORE = (function () {
     }
 
     printer = {
-        indents: ind = 0, ///< This is the amount of indentation used in recurring levels of the pretty-printer; it must be a member of ops so it can be passed through bnf.operate().
+        indents: ind = 0,
         operate: operate = bnf.operate,
         generic: defprint,
         "<程序>": function (ast, ops) {
@@ -81,7 +83,7 @@ CORE = (function () {
         "<变量 组>": function (ast, ops) {
             return defprint(ast, ops, ['', ' ']);
         },
-        "<语句>": defprint, // This is just a big OR of other rules.
+        "<语句>": defprint,
         "<赋值>": function (ast, ops) {
             return defprint(ast, ops, [' ', ' ', '']);
         },
@@ -114,7 +116,6 @@ CORE = (function () {
         + ", which should not happen");
     }
 
-    /// This function is called to ensure that an AST node is actually a rule.
     function assertRule(rule) {
         if (!rule || rule.type != "rule")
             throw("Internal error: " +
@@ -123,7 +124,6 @@ CORE = (function () {
                     : "anonymous rule; not a rule" : "undefined rule: not in tree"));
     }
 
-    /// This function is called to ensure that an AST node is the token the interpreter thinks it is.
     function assertToken(ast, ind, name) {
         if (!ast || ast.type != "rule" || !ast.ast)
             throw("Internal error: " + (ast ? ast.name ? ast.name : "anonymous rule" : "undefined rule") + " does not contain expected token");
@@ -131,7 +131,6 @@ CORE = (function () {
             throw("Internal error: expected token `" + name + "' in rule `" + ast.name + "' was not found");
     }
 
-    /// This function is called to ensure that an AST node is whitespace, and so safe to ignore.
     function assertWhite(ast, ind) {
         if (!ast || ast.type != "rule" || !ast.ast)
             throw("Internal error: " + (ast ? ast.name ? ast.name : "anonymous rule" : "undefined rule") + " does not contain expected token");
@@ -139,15 +138,11 @@ CORE = (function () {
             throw("Internal error: unexpected pattern in rule `" + ast.name + "': white space expected");
     }
 
-    /// This function is called on an arbitrary AST node which may not exist; it ensures that the node exists,
-    /// and that it is a rule, and then it invokes the rule's handler method.
     function operateRule(rule, ops, defined) {
         if (!defined && !rule) return 0;
-        // assertRule(rule);
         return operate(rule, ops);
     }
 
-    /// This function ensures that a result is, in fact, an array of some length.
     function assertArray(arr, lower, upper, kind) {
         if (!arr || !arr.length || arr.length < lower || (upper != -1 && arr.length > upper))
             throw("Internal error: " + kind + " does not have expected length (" + (arr ? arr.length : "null") + " should be " +
@@ -161,11 +156,6 @@ CORE = (function () {
         return x;
     }
 
-    /* *********************************************************************** *
-     * Here begins the actual interpreter code.                                *
-     * *********************************************************************** */
-
-    /** This maps CORE operator strings to their corresponding JavaScript equivalents. */
     var operators = {
         ">=": function (x, y) {
             return x >= y;
@@ -211,18 +201,15 @@ CORE = (function () {
         throw("Internal error: Unrecognized CORE operator `" + op + "'");
     }
 
-    /**
-     * This is the interpreter dictionary; it's similar to the printer one, above, but actually executes the code.
-     */
     interpreter = {
         symbols: symbolTable = {},
         symExist: assertSymbolExists = function (sym) {
             if (!(sym in symbolTable))
                 throw("Program error: Variable `" + sym + "' has not been declared");
         },
-        input: "", // This allows the caller to inject input
+        input: "",
         generic: function (ast, ops) {
-            if (!ast || ast.name != "<>") // This is our try-all rule that allows any rule in the program.
+            if (!ast || ast.name != "<>")
                 throw("Internal error: Invalid rule to interpret: " + (ast ? ast.name : "(no rule passed)") + ": Rule not found");
             assertArray(ast.ast, 1, 1, "AST");
             if (ast.ast[0].name != "<程序>")
@@ -231,54 +218,50 @@ CORE = (function () {
             ops.input = ops.input.split(/[\s\n]+/);
             return operate(ast.ast[0], ops);
         },
-        evalSeq: // Function to evaluate every rule in an AST, sequentially.
-            evalSeq = function (ast, ops) {
-                var res = null;
-                for (var i = 0; i < ast.ast.length; ++i)
-                    if (ast.ast[i].type == "rule")
-                        res = operate(ast.ast[i], ops);
-                return res;
-            },
+        evalSeq: evalSeq = function (ast, ops) {
+            var res = null;
+            for (var i = 0; i < ast.ast.length; ++i)
+                if (ast.ast[i].type == "rule")
+                    res = operate(ast.ast[i], ops);
+            return res;
+        },
 
         "<程序>": evalSeq,
         "<定义 块>": evalSeq,
         "<语句 块>": evalSeq,
         "<语句>": evalSeq,
 
-        // These rules are for working with variable names
-        "<定义>": // Declares variables, adding them to our symbol table.
-            function (ast, ops) {
-                var ids = operateRule(ast.ast[2], ops, true);
-                if (!ids || !ids.length || ids.length < 1)
-                    throw("Internal error: empty ID list?");
-                for (var i = 0; i < ids.length; ++i)
-                    symbolTable[ids[i]] = null; // Declare, but do not initialize
-            },
-        "<变量 组>": // Returns an array of IDs.
-            function (ast, ops) {
-                var res = assertArray(operateRule(ast.ast[0], printer, true), 1, -1, "ID list");
-                if (ast.ast.length > 1) {
-                    var ida = operateRule(ast.ast[4], ops, true);
-                    var rest = assertArray(ida, 1, -1, "ID list");
-                    for (var i = 0; i < rest.length; ++i)
-                        res.push(rest[i]);
-                }
-                return res;
-            },
+
+        "<定义>": function (ast, ops) {
+            var ids = operateRule(ast.ast[2], ops, true);
+            if (!ids || !ids.length || ids.length < 1)
+                throw("Internal error: empty ID list?");
+            for (var i = 0; i < ids.length; ++i)
+                symbolTable[ids[i]] = null;
+        },
+        "<变量 组>": function (ast, ops) {
+            var res = assertArray(operateRule(ast.ast[0], printer, true), 1, -1, "ID list");
+            if (ast.ast.length > 1) {
+                var ida = operateRule(ast.ast[4], ops, true);
+                var rest = assertArray(ida, 1, -1, "ID list");
+                for (var i = 0; i < rest.length; ++i)
+                    res.push(rest[i]);
+            }
+            return res;
+        },
         "<赋值>": function (ast, ops) {
-            var id = operateRule(ast.ast[0], printer, true); // This just asks the printer to print the variable name. Terrible, eh?
+            var id = operateRule(ast.ast[0], printer, true);
             // assertSymbolExists(id); //校验id 存在
             var val = operateRule(ast.ast[4], ops, true);
             return symbolTable[id] = val;
         },
 
-        // These are the rules moving actual code.
         "<判断>": function (ast, ops) {
             var cond = operateRule(ast.ast[2], ops, true);
             if (cond)
                 return operateRule(ast.ast[6], ops, true);
             if (ast.ind)
-                return operateRule(ast.ast[10], ops, false); // The else code is optional.
+                return operateRule(ast.ast[10], ops, false);
         },
         "<循环>": function (ast, ops) {
             var res = 0;

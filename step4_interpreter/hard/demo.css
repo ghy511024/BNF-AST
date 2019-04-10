@@ -1,0 +1,39 @@
+body{margin:0px;padding: 0px;}
+#bnf {
+    width: 600px;
+    height: 460px;
+    resize: none;
+
+}
+#str{
+    width:300px;
+    height:300px;
+    resize: none;
+}
+#conout{
+    width:300px;
+    height:300px;
+    resize: none;
+}
+.displaydiv {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.rulespan {
+    border: 1px solid #084;
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+    background: rgba(150, 220, 80, .0625);
+}
+
+.tokenspan {
+    border: 1px solid #800;
+    margin: 2px;
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    background: #FDA;
+}

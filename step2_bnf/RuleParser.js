@@ -2,8 +2,6 @@
  * Created by ghy on 2019/4/3.
  */
 class RuleParser {
-
-
     //  解析整个bnf
     parse(bnf) {
         var rules_raw = bnf.split(/(<.*?>)\s*::=\s*(.*)\s*/);

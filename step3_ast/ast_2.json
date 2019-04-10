@@ -1,0 +1,231 @@
+{
+  "ind": 3,
+  "type": "rule",
+  "name": "<>",
+  "ast": [
+    {
+      "ind": 2,
+      "type": "rule",
+      "name": "<计算>",
+      "ast": [
+        {
+          "ind": 0,
+          "type": "rule",
+          "name": "<值>",
+          "ast": [
+            {
+              "ind": 1,
+              "type": "rule",
+              "name": "<整形>",
+              "ast": [
+                {
+                  "ind": 8,
+                  "type": "rule",
+                  "name": "<数字>",
+                  "ast": [
+                    {
+                      "type": "token",
+                      "name": "8",
+                      "pos": 0,
+                      "epos": 1
+                    }
+                  ],
+                  "pos": 0,
+                  "epos": 1
+                }
+              ],
+              "pos": 0,
+              "epos": 1
+            }
+          ],
+          "pos": 0,
+          "epos": 1
+        },
+        {
+          "type": "white",
+          "pos": 1,
+          "epos": 1,
+          "name": " "
+        },
+        {
+          "type": "token",
+          "name": "除",
+          "pos": 1,
+          "epos": 2
+        },
+        {
+          "type": "white",
+          "pos": 2,
+          "epos": 2,
+          "name": " "
+        },
+        {
+          "ind": 0,
+          "type": "rule",
+          "name": "<计算>",
+          "ast": [
+            {
+              "ind": 1,
+              "type": "rule",
+              "name": "<值>",
+              "ast": [
+                {
+                  "type": "token",
+                  "name": "(",
+                  "pos": 2,
+                  "epos": 3
+                },
+                {
+                  "type": "white",
+                  "pos": 3,
+                  "epos": 3,
+                  "name": " "
+                },
+                {
+                  "ind": 1,
+                  "type": "rule",
+                  "name": "<表达式>",
+                  "ast": [
+                    {
+                      "ind": 0,
+                      "type": "rule",
+                      "name": "<计算>",
+                      "ast": [
+                        {
+                          "ind": 0,
+                          "type": "rule",
+                          "name": "<值>",
+                          "ast": [
+                            {
+                              "ind": 1,
+                              "type": "rule",
+                              "name": "<整形>",
+                              "ast": [
+                                {
+                                  "ind": 1,
+                                  "type": "rule",
+                                  "name": "<数字>",
+                                  "ast": [
+                                    {
+                                      "type": "token",
+                                      "name": "1",
+                                      "pos": 3,
+                                      "epos": 4
+                                    }
+                                  ],
+                                  "pos": 3,
+                                  "epos": 4
+                                }
+                              ],
+                              "pos": 3,
+                              "epos": 4
+                            }
+                          ],
+                          "pos": 3,
+                          "epos": 4
+                        }
+                      ],
+                      "pos": 3,
+                      "epos": 4
+                    },
+                    {
+                      "type": "white",
+                      "pos": 4,
+                      "epos": 4,
+                      "name": " "
+                    },
+                    {
+                      "type": "token",
+                      "name": "加",
+                      "pos": 4,
+                      "epos": 5
+                    },
+                    {
+                      "type": "white",
+                      "pos": 5,
+                      "epos": 5,
+                      "name": " "
+                    },
+                    {
+                      "ind": 0,
+                      "type": "rule",
+                      "name": "<表达式>",
+                      "ast": [
+                        {
+                          "ind": 0,
+                          "type": "rule",
+                          "name": "<计算>",
+                          "ast": [
+                            {
+                              "ind": 0,
+                              "type": "rule",
+                              "name": "<值>",
+                              "ast": [
+                                {
+                                  "ind": 1,
+                                  "type": "rule",
+                                  "name": "<整形>",
+                                  "ast": [
+                                    {
+                                      "ind": 3,
+                                      "type": "rule",
+                                      "name": "<数字>",
+                                      "ast": [
+                                        {
+                                          "type": "token",
+                                          "name": "3",
+                                          "pos": 5,
+                                          "epos": 6
+                                        }
+                                      ],
+                                      "pos": 5,
+                                      "epos": 6
+                                    }
+                                  ],
+                                  "pos": 5,
+                                  "epos": 6
+                                }
+                              ],
+                              "pos": 5,
+                              "epos": 6
+                            }
+                          ],
+                          "pos": 5,
+                          "epos": 6
+                        }
+                      ],
+                      "pos": 5,
+                      "epos": 6
+                    }
+                  ],
+                  "pos": 3,
+                  "epos": 6
+                },
+                {
+                  "type": "white",
+                  "pos": 6,
+                  "epos": 6,
+                  "name": " "
+                },
+                {
+                  "type": "token",
+                  "name": ")",
+                  "pos": 6,
+                  "epos": 7
+                }
+              ],
+              "pos": 2,
+              "epos": 7
+            }
+          ],
+          "pos": 2,
+          "epos": 7
+        }
+      ],
+      "pos": 0,
+      "epos": 7
+    }
+  ],
+  "pos": 0,
+  "epos": 7
+}

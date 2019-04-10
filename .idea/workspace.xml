@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4789aca8-18b1-4c8e-a0d5-342b2bc8fab0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/a2/x.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ASTInterpreter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ASTParse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/RuleParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ast_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/a.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/面试评估" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ASTInterpreter.js" afterPath="$PROJECT_DIR$/lib/ASTInterpreter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test1.js" afterPath="$PROJECT_DIR$/test/test1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interpreter_ch.js" afterPath="$PROJECT_DIR$/interpreter_ch.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,80 +25,34 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5419162">
+    <splitter split-orientation="horizontal" split-proportion="0.65168536">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ASTParse.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
+          <file leaf-file-name="interpreter_ch.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/interpreter_ch.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="194" column="25" lean-forward="false" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
-                  <folding>
-                    <element signature="n#!!block;n#parse_rules#0" expanded="false" />
-                    <element signature="n#!!block;n#ASTParse#0" expanded="false" />
-                    <element signature="n#!!block;n#visit_rule_opt#0;n#!!block;n#ASTParse#0" expanded="false" />
-                    <element signature="n#!!block;n#visit_rule#0;n#!!block;n#ASTParse#0" expanded="false" />
-                    <element signature="e#5546#6373#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RuleParser.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/RuleParser.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-                  <folding>
-                    <element signature="n#!!doc;n#RuleParser#0" expanded="false" />
-                    <marker date="1554308602128" expanded="true" signature="1460:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1473:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1477:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1484:1521" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index.htm">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="244">
-                  <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="34" />
+                <state relative-caret-position="5328">
+                  <caret line="363" column="0" lean-forward="true" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ASTInterpreter.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/ASTInterpreter.js">
+          <file leaf-file-name="CORE_ch.bnf" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CORE_ch.bnf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="318">
-                  <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                  </folding>
+                <state relative-caret-position="320">
+                  <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ast_data.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/ast_data.js">
+          <file leaf-file-name="interpreter.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/interpreter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="rule_demo.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tmp/rule_demo.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
+                <state relative-caret-position="384">
+                  <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -107,65 +68,276 @@
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RuleParser.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/RuleParser.js">
+          <file leaf-file-name="rule_demo.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tmp/rule_demo.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="15" />
+                <state relative-caret-position="304">
+                  <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="iterpreter_test.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tmp/iterpreter_test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="192">
+                  <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/index.htm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="244">
+                  <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
                   <folding>
-                    <element signature="n#!!doc;n#RuleParser#0" expanded="false" />
-                    <marker date="1554308602128" expanded="true" signature="1460:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1473:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1477:1521" ph="..." />
-                    <marker date="1554308602128" expanded="true" signature="1484:1521" ph="..." />
+                    <element signature="n#style#0;n#textarea#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#textarea#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="test1.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/test1.js">
+          <file leaf-file-name="demo.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/demo.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#0#38#0" expanded="false" />
-                    <marker date="1554390521949" expanded="true" signature="150:329" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="183:209" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="183:283" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="183:329" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="196:209" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="200:209" ph="..." />
-                    <marker date="1554390521949" expanded="true" signature="207:209" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="interpreter_ch.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/interpreter_ch.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="333" column="45" lean-forward="true" selection-start-line="333" selection-start-column="35" selection-end-line="333" selection-end-column="45" />
+                <state relative-caret-position="224">
+                  <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="bnfparser.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bnfparser.js">
+            <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/bnfparser.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="805">
-                  <caret line="244" column="23" lean-forward="false" selection-start-line="244" selection-start-column="20" selection-end-line="244" selection-end-column="23" />
+                <state relative-caret-position="1568">
+                  <caret line="98" column="61" lean-forward="false" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="61" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
                   <folding>
-                    <element signature="e#1733#5292#0" expanded="false" />
-                    <element signature="e#5450#7024#0" expanded="false" />
-                    <element signature="e#7343#8234#0" expanded="false" />
+                    <marker date="1554914876988" expanded="true" signature="223:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="256:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="269:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="273:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="280:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="284:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="299:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="309:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="316:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="328:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="334:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="341:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="347:402" ph="..." />
+                    <marker date="1554914876988" expanded="true" signature="354:402" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.htm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="35">
+                  <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step1/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="112">
+                  <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step2_bnf/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="128">
+                  <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+                  <folding>
+                    <marker date="1554913782301" expanded="true" signature="140:198" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_2.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step2_bnf/main_2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="224">
+                  <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+                  <folding>
+                    <marker date="1554914027819" expanded="true" signature="100:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="133:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="146:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="150:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="157:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="161:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="176:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="186:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="193:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="205:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="211:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="218:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="224:279" ph="..." />
+                    <marker date="1554914027819" expanded="true" signature="231:279" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_3.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step2_bnf/main_3.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="592">
+                  <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="26" />
+                  <folding>
+                    <marker date="1554914089078" expanded="true" signature="140:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="155:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="162:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="170:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="180:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="187:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="194:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="199:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="218:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="227:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="237:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="246:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="253:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="261:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="271:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="278:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="285:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="290:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="303:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="308:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="313:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="318:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="323:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="329:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="342:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="351:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="358:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="376:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="383:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="401:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="409:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="425:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="434:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="443:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="459:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="468:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="477:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="489:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="498:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="507:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="515:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="526:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="534:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="542:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="556:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="563:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="567:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="576:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="613:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="624:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="631:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="639:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="646:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="654:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="659:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="671:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="677:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="684:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="690:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="697:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="702:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="717:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="724:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="734:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="742:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="747:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="760:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="764:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="771:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="775:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="782:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="787:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="852:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="865:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="869:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="876:943" ph="..." />
+                    <marker date="1554914089078" expanded="true" signature="881:943" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_1.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step3_ast/main_1.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                  <folding>
+                    <marker date="1554914280483" expanded="true" signature="140:198" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_2.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/step3_ast/main_2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding>
+                    <marker date="1554914488236" expanded="true" signature="152:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="185:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="198:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="202:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="209:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="213:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="228:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="238:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="245:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="257:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="263:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="270:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="276:331" ph="..." />
+                    <marker date="1554914488236" expanded="true" signature="283:331" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ast_1.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/step3_ast/ast_1.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="192">
+                  <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -198,10 +370,24 @@
       <find>printer</find>
       <find>interpreter</find>
       <find>表达</find>
+      <find>do_operator</find>
+      <find>operateRule</find>
+      <find>&quot;pos&quot;: 3</find>
+      <find>&quot;epos&quot;: 4</find>
+      <find>&quot;name&quot;: &quot;3&quot;</find>
+      <find>console.log</find>
+      <find>8</find>
+      <find>ast.type == &quot;rule&quot;</find>
+      <find>r</find>
+      <find>error</find>
+      <find>symbolTable</find>
+      <find>input</find>
+      <find>_ch</find>
     </findStrings>
     <replaceStrings>
       <replace>this.worthless_nests</replace>
       <replace>this.pos</replace>
+      <replace>mylog</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\develop\workspace\my\BNF-AST</dir>
@@ -217,15 +403,33 @@
         <option value="$PROJECT_DIR$/lib/parse.js" />
         <option value="$PROJECT_DIR$/lib/Parse.js" />
         <option value="$PROJECT_DIR$/lib/Parser.js" />
-        <option value="$PROJECT_DIR$/lib/RuleParser.js" />
         <option value="$PROJECT_DIR$/lib/ASTParse.js" />
         <option value="$PROJECT_DIR$/lib/ASTParse2.js" />
         <option value="$PROJECT_DIR$/a2/x.js" />
         <option value="$PROJECT_DIR$/bnfparser.js" />
         <option value="$PROJECT_DIR$/interpreter_ch.js" />
-        <option value="$PROJECT_DIR$/lib/ast_data.js" />
         <option value="$PROJECT_DIR$/test/test1.js" />
+        <option value="$PROJECT_DIR$/lib/RuleParser.js" />
+        <option value="$PROJECT_DIR$/lib/ASTCore.js" />
+        <option value="$PROJECT_DIR$/lib/ast_data.js" />
+        <option value="$PROJECT_DIR$/lib/ast_export.js" />
         <option value="$PROJECT_DIR$/lib/ASTInterpreter.js" />
+        <option value="$PROJECT_DIR$/lib/main.js" />
+        <option value="$PROJECT_DIR$/step1/main.js" />
+        <option value="$PROJECT_DIR$/step2/main.js" />
+        <option value="$PROJECT_DIR$/step2/main_2.js" />
+        <option value="$PROJECT_DIR$/step2/main_1.js" />
+        <option value="$PROJECT_DIR$/step2_bnf/main_2.js" />
+        <option value="$PROJECT_DIR$/step2_bnf/main_3.js" />
+        <option value="$PROJECT_DIR$/step3_ast/main_1.js" />
+        <option value="$PROJECT_DIR$/step3_ast/ast_1.json" />
+        <option value="$PROJECT_DIR$/step3_ast/ast_2.json" />
+        <option value="$PROJECT_DIR$/step3_ast/main_2.js" />
+        <option value="$PROJECT_DIR$/step4_interpreter/ASTInterpreter.js" />
+        <option value="$PROJECT_DIR$/step4_interpreter/easy/ASTInterpreter.js" />
+        <option value="$PROJECT_DIR$/step4_interpreter/easy/main.js" />
+        <option value="$PROJECT_DIR$/step4_interpreter/hard/interpreter.js" />
+        <option value="$PROJECT_DIR$/step4_interpreter/hard/index.htm" />
       </list>
     </option>
   </component>
@@ -242,8 +446,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="74" />
+    <option name="x" value="68" />
+    <option name="y" value="275" />
     <option name="width" value="1606" />
     <option name="height" value="948" />
   </component>
@@ -265,8 +469,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +491,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tmp" />
+              <option name="myItemId" value="step4_interpreter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,40 +509,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BNF-AST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BNF-AST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BNF-AST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BNF-AST" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a2" />
+              <option name="myItemId" value="step4_interpreter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +530,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\develop\workspace\my\BNF-AST\lib" />
+      <recent name="E:\develop\workspace\my\BNF-AST\step4_interpreter\hard" />
+      <recent name="E:\develop\workspace\my\BNF-AST\step4_interpreter\easy" />
+      <recent name="E:\develop\workspace\my\BNF-AST\step4_interpreter" />
+      <recent name="E:\develop\workspace\my\BNF-AST\step3_ast" />
+      <recent name="E:\develop\workspace\my\BNF-AST\step2_bnf" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,17 +549,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.ASTInterpreter.js">
-    <configuration default="false" name="x.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="x.js" working-dir="$PROJECT_DIR$/a2">
+  <component name="RunManager" selected="Node.js.main.js">
+    <configuration default="false" name="main_2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="main_2.js" working-dir="$PROJECT_DIR$/step2_bnf">
       <method />
     </configuration>
-    <configuration default="false" name="Parser.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="$PROJECT_DIR$/lib/RuleParser.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration default="false" name="main_1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="main_1.js" working-dir="$PROJECT_DIR$/step3_ast">
       <method />
     </configuration>
-    <configuration default="false" name="test1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test1.js" working-dir="$PROJECT_DIR$/test">
+    <configuration default="false" name="main_2.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="main_2.js" working-dir="$PROJECT_DIR$/step3_ast">
       <method />
     </configuration>
-    <configuration default="false" name="ASTInterpreter.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ASTInterpreter.js" working-dir="$PROJECT_DIR$/lib">
+    <configuration default="false" name="ASTInterpreter.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="ASTInterpreter.js" working-dir="$PROJECT_DIR$/step4_interpreter">
+      <method />
+    </configuration>
+    <configuration default="false" name="main.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="main.js" working-dir="$PROJECT_DIR$/step4_interpreter/easy">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -444,18 +631,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.x.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.Parser.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.test1.js" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.main_2.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.main_1.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.main_2.js (1)" />
       <item index="3" class="java.lang.String" itemvalue="Node.js.ASTInterpreter.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.main.js" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.ASTInterpreter.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.test1.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.Parser.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.x.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.main.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.ASTInterpreter.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.main_2.js (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.main_1.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.main_2.js" />
       </list>
     </recent_temporary>
   </component>
@@ -470,21 +659,22 @@
       <option name="presentableId" value="Default" />
       <updated>1554301915118</updated>
       <workItem from="1554301916596" duration="8687000" />
-      <workItem from="1554386052113" duration="4504000" />
+      <workItem from="1554386052113" duration="4543000" />
+      <workItem from="1554905367447" duration="11403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13191000" />
+    <option name="totallyTimeSpent" value="24633000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="74" width="1606" height="948" extended-state="0" />
+    <frame x="68" y="275" width="1606" height="948" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14795919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3239264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="62" y="592" width="1193" height="264" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3239264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="62" y="592" width="1193" height="264" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883435" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -495,6 +685,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -509,65 +700,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="194" column="25" lean-forward="true" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#parse_rules#0" expanded="false" />
-            <element signature="n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule_opt#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="e#5546#6373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="95" column="46" lean-forward="false" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/rule_demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/ast_demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ASTInterpreter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/RuleParser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc;n#RuleParser#0" expanded="false" />
-            <marker date="1554308602128" expanded="true" signature="1460:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1473:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1477:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1484:1521" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,16 +712,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-            <marker date="1554390521949" expanded="true" signature="150:329" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:283" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:329" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="196:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="200:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="207:209" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,9 +720,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -625,21 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CORE_ch.bnf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/rule_demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CNAME">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -647,18 +758,473 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tmp/a.json">
+    <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-576">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bnfparser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="245" column="9" lean-forward="true" selection-start-line="245" selection-start-column="9" selection-end-line="245" selection-end-column="9" />
+          <folding>
+            <element signature="e#1733#5292#0" expanded="false" />
+            <element signature="e#5450#7024#0" expanded="false" />
+            <element signature="e#7343#8234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ASTInterpreter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a2/x.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ast_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/RuleParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ASTCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2_bnf/RuleParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step1/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2/main_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2/ASTParse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="75" column="36" lean-forward="true" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2_bnf/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding>
+            <marker date="1554913782301" expanded="true" signature="140:198" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2_bnf/main_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <marker date="1554914027819" expanded="true" signature="100:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="133:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="146:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="150:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="157:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="161:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="176:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="186:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="193:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="205:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="211:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="218:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="224:279" ph="..." />
+            <marker date="1554914027819" expanded="true" signature="231:279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step2_bnf/main_3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <marker date="1554914089078" expanded="true" signature="140:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="155:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="162:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="170:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="180:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="187:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="194:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="199:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="218:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="227:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="237:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="246:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="253:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="261:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="271:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="278:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="285:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="290:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="303:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="308:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="313:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="318:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="323:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="329:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="342:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="351:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="358:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="376:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="383:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="401:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="409:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="425:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="434:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="443:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="459:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="468:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="477:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="489:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="498:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="507:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="515:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="526:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="534:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="542:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="556:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="563:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="567:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="576:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="613:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="624:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="631:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="639:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="646:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="654:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="659:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="671:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="677:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="684:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="690:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="697:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="702:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="717:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="724:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="734:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="742:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="747:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="760:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="764:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="771:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="775:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="782:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="787:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="852:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="865:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="869:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="876:943" ph="..." />
+            <marker date="1554914089078" expanded="true" signature="881:943" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3_ast/main_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1554914280483" expanded="true" signature="140:198" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3_ast/RuleParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3_ast/ast_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3_ast/ast_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="230" column="1" lean-forward="true" selection-start-line="230" selection-start-column="1" selection-end-line="230" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/RuleParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/ASTCore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/ASTInterpreter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step3_ast/main_2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1554914488236" expanded="true" signature="152:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="185:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="198:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="202:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="209:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="213:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="228:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="238:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="245:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="257:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="263:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="270:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="276:331" ph="..." />
+            <marker date="1554914488236" expanded="true" signature="283:331" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ast_export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="194" column="25" lean-forward="true" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/ASTParse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/RuleParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/ASTCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-802">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/ASTInterpreter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/easy/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding>
+            <marker date="1554914876988" expanded="true" signature="223:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="256:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="269:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="273:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="280:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="284:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="299:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="309:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="316:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="328:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="334:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="341:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="347:402" ph="..." />
+            <marker date="1554914876988" expanded="true" signature="354:402" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpreter_ch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5328">
+          <caret line="363" column="0" lean-forward="true" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CORE_ch.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/a.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/CORE_ch.bnf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/bnfparser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1568">
+          <caret line="98" column="61" lean-forward="false" selection-start-line="98" selection-start-column="56" selection-end-line="98" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/iterpreter_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        <state relative-caret-position="192">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/rule_demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#textarea#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,120 +1236,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
+    <entry file="file://$PROJECT_DIR$/step4_interpreter/hard/interpreter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#parse_rules#0" expanded="false" />
-            <element signature="n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule_opt#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="e#5546#6373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a2/x.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ASTParse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="194" column="25" lean-forward="false" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#parse_rules#0" expanded="false" />
-            <element signature="n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule_opt#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="n#!!block;n#visit_rule#0;n#!!block;n#ASTParse#0" expanded="false" />
-            <element signature="e#5546#6373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/RuleParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc;n#RuleParser#0" expanded="false" />
-            <marker date="1554308602128" expanded="true" signature="1460:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1473:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1477:1521" ph="..." />
-            <marker date="1554308602128" expanded="true" signature="1484:1521" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bnfparser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="244" column="23" lean-forward="false" selection-start-line="244" selection-start-column="20" selection-end-line="244" selection-end-column="23" />
-          <folding>
-            <element signature="e#1733#5292#0" expanded="false" />
-            <element signature="e#5450#7024#0" expanded="false" />
-            <element signature="e#7343#8234#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="384">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpreter_ch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="333" column="45" lean-forward="true" selection-start-line="333" selection-start-column="35" selection-end-line="333" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ast_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="86" column="25" lean-forward="true" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ASTInterpreter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-            <marker date="1554390521949" expanded="true" signature="150:329" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:283" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="183:329" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="196:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="200:209" ph="..." />
-            <marker date="1554390521949" expanded="true" signature="207:209" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

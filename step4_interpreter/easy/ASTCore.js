@@ -1,9 +1,6 @@
 /**
- * Created by ghy on 2019/4/4.
+ * Created by ghy on 2019/4/10.
  */
-
-var ast = require('./ast_data')
-
 var operators = {
     ">=": function (x, y) {
         return x >= y;
@@ -42,13 +39,22 @@ var operators = {
         return x || y;
     }
 };
-
 function operate(ast, ops) {
-    let res = "";
+    if (ast.type == "rule" && ops[ast.name] != undefined) {
+        return (ops[ast.name])(ast, ops);
+    }
+    return print(ast, ops);
+}
+function print(ast, ops) {
+    let res = '';
     if (ast.type == "rule") {
         for (var i = 0; i < ast.ast.length; ++i) {
             if (ast.ast[i].type == "rule") {
-                res += ops[ast.ast[i].name](ast.ast[i], ops);
+                if (!res) {
+                    res = ops[ast.ast[i].name](ast.ast[i], ops);
+                } else {
+                    res += ops[ast.ast[i].name](ast.ast[i], ops);
+                }
             } else if (ast.ast[i].type == "token") {
                 res += ast.ast[i].name;
             }
@@ -56,32 +62,15 @@ function operate(ast, ops) {
     }
     return res;
 }
-const interpreter = {
-    "<数字>": operate,
-    "<整形>": function (ast, ops) {
-        var num = operate(ast, interpreter);
-        return parseInt(num);
-    },
-    "<值>": function (ast, ops) {
-        var value;
-        if (ast.ast.length == 1) {
-            value = operate(ast.ast[0], interpreter);
-        } else {
-            value = operate(ast.ast[2], interpreter);
-        }
 
-        return value;
-    },
-    "<计算>": function (ast, ops) {
-        var value;
-        if (ast.ast.length == 1) {
-            value = operate(ast.ast[0], interpreter);
-        } else {
-            value = operate(ast.ast[2], interpreter);
-        }
-
-        return value;
+function do_operator(op, x, y) {
+    if (op in operators) {
+        return operators[op](x, y);
     }
+    throw("ASTCore error: operator `" + op + "'");
 }
-var res = operate(ast, interpreter);
-console.log(res, typeof res);
+module.exports = {
+    operate: operate,
+    print: print,
+    do_operator: do_operator,
+}
